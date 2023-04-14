@@ -3,6 +3,6 @@ RUN pip install django==3.2
 
 COPY . .
 
-RUN python manage.py migrate
+RUN python manage.py 
 EXPOSE 8001
-CMD ["python","manage.py","runserver","13.48.3.193:8001"]
+CMD ["python","manage.py","runserver","0.0.0.0:8001"]
